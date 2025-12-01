@@ -4,7 +4,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Knapper */
   --primary-button: #D9A64F;
+  --primary-hover: #000000
 }
 
 @theme inline {
@@ -27,7 +30,7 @@ body {
 
 @layer utilities {
   .glass-card {
-    width: fit-content;
+    width: var(--product-card);
     height: fit-content;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.4);
