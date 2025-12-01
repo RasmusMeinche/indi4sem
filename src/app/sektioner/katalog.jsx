@@ -1,6 +1,5 @@
 import { getData } from "@/src/lib/fetching";
 import Glasscard from "../components/glasscard";
-import Image from "next/image";
 
 export default async function Katalog() {
 
@@ -8,15 +7,16 @@ export default async function Katalog() {
 
   return (
     <>
-    <section className="bg-[url(/jordfarvet-bg.png)] w-full h-screen">
+    <section className="bg-[url(/jordfarvet-bg.png)] w-full h-screen flex items-center">
       {produktData.map((item) => (
         <Glasscard
           key={item.id}
           overskrift={item.overskrift}
           img={item.img}
-          tekst={item.broedtekst}
+          tekst={item.korttekst}
         />
-      ))}
+      ))
+      }
       </section>
     </>
     

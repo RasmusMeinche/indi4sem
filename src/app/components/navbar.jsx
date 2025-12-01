@@ -3,13 +3,14 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <section className="w-full h-15">
+        <section className="w-full h-fit">
             <div className="
                 flex items-center px-8 py-4 justify-between max-w-[1200px]
 
                 /* padding til alle børn undtagen det første */
                 [&>*:not(:first-child)]:px-4
                 [&>*:not(:first-child)]:py-1
+                [&>*:not(:first-child)]:text-2xl
 
                 /* Hover-styles */
                 [&>*:not(:first-child):hover]:text-white
