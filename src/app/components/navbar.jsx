@@ -4,13 +4,13 @@ import Image from "next/image"
 export default function navbar() {
     return (
         <section className="w-full h-15">
-            <div className="flex items-center px-4 py-2 justify-between max-w-[1200px]">
+            <div className="flex items-center px-8 py-4 justify-between max-w-[1200px]">
                 <Link href="/">
                      <Image
                         src="/logo.png"
                         alt="Logo"
-                        width={50}
-                        height={50}
+                        width={45}
+                        height={45}
                         className=""
           />
                 </Link>
