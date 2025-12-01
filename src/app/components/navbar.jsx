@@ -1,19 +1,30 @@
 import Link from "next/link"
 import Image from "next/image"
 
-export default function navbar() {
+export default function Navbar() {
     return (
         <section className="w-full h-15">
-            <div className="flex items-center px-8 py-4 justify-between max-w-[1200px]">
+            <div className="
+                flex items-center px-8 py-4 justify-between max-w-[1200px]
+
+                /* padding til alle børn undtagen det første */
+                [&>*:not(:first-child)]:px-4
+                [&>*:not(:first-child)]:py-2
+
+                /* Hover-styles */
+                [&>*:not(:first-child):hover]:text-white
+                [&>*:not(:first-child):hover]:bg-black
+                [&>*:not(:first-child):hover]:rounded-md
+            ">
                 <Link href="/">
-                     <Image
+                    <Image
                         src="/logo.png"
                         alt="Logo"
                         width={45}
                         height={45}
-                        className=""
-          />
+                    />
                 </Link>
+
                 <a href="">Ansvar</a>
                 <a href="">Projekter</a>
                 <a href="">Katalog</a>
