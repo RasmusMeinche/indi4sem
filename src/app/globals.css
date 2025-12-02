@@ -6,7 +6,7 @@
   --foreground: #171717;
 
   /* Knapper */
-  --primary-button: #D9A64F;
+  --primary-button: #d9a64f;
   --primary-hover: #000000;
 
   /* Tekst */
@@ -31,8 +31,7 @@
     -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow:
-      0 8px 32px rgba(0, 0, 0, 0.1),
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
       inset 0 1px 0 rgba(255, 255, 255, 0.5),
       inset 0 -1px 0 rgba(255, 255, 255, 0.1),
       inset 0 0 0px 0px rgba(255, 255, 255, 0.2);
@@ -41,7 +40,7 @@
   }
 
   .glass-card::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -56,7 +55,7 @@
   }
 
   .glass-card::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

@@ -5,7 +5,7 @@ import { CiInstagram } from "react-icons/ci";
 export default function footer() {
   return (
     <section className="w-full py-12 px-6 md:px-12 bg-black text-white">
-      <div className="w-2/3 mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+      <div className="w-(--content-size) mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
         <div className="flex flex-col gap-6">
           <Image
             src="/logo_hvid_opt.png"
