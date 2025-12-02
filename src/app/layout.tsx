@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Darker_Grotesque } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/footer";
 
 const darkergrotesque = Darker_Grotesque({
-  subsets: ['latin'],
-})
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,8 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={darkergrotesque.className}>
+    <html
+      lang="en"
+      className={darkergrotesque.className}
+    >
       <body>{children}</body>
+      <Footer />
     </html>
   );
 }
