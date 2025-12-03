@@ -7,7 +7,7 @@ export default async function Katalog() {
 
   return (
     <>
-    <section className="bg-[url(/jordfarvet-bg.png)] w-full h-fit flex items-center py-(--content-padding)">
+    <section className="bg-[url(/jordfarvet-bg.png)] bg-cover bg-center w-full h-fit flex items-center py-(--content-padding)">
       {produktData.map((item) => (
         <Glasscard
           key={item.id}

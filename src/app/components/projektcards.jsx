@@ -15,6 +15,7 @@ export default async function Projekt () {
                 imgWidth="w-full"
                 imgHeight="h-[180px]"
                 margin="my-4"
+                textWidth="w-full"
 
                 key={item.id}
                 overskrift={item.projekt}

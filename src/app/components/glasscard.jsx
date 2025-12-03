@@ -12,7 +12,8 @@ export default function Glass({
   object = "object-cover",
   textSize = "text-xl",
   titleSize = "text-4xl",
-  margin = "my-4"
+  margin = "my-4",
+  textWidth = "w-4/5"
 }) {
   return (
     <div className={`${width} glass-card flex flex-col ${height} m-auto`}>
@@ -29,7 +30,7 @@ export default function Glass({
         )}
 
         {tekst && (
-          <p className={`m-auto w-4/5 ${textSize}`}>{tekst}</p>
+          <p className={`m-auto ${textWidth} ${textSize}`}>{tekst}</p>
         )}
 
         {overskrift && <Button knapTekst="Læs mere" />}
