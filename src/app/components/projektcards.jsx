@@ -1,12 +1,15 @@
 import Glasscard from "../components/glasscard";
 import { getDataArtikler } from "@/src/lib/fetching";
+import Sektionsoverskrift from "./sektionsoverskrift";
 
 export default async function Projekt () {
 
     const projektData = await getDataArtikler();
 
     return (
-        <section className="grid grid-cols-3 justify-between gap-8 w-(--content-size) py-(--content-padding) m-auto">
+        <section className=" w-(--content-size) py-(--content-padding) m-auto">
+            < Sektionsoverskrift titel="Projekter" />
+            <div className="grid grid-cols-3 justify-between gap-8">
             {projektData.map((item) => (
             <Glasscard
                 width="full"
@@ -23,7 +26,8 @@ export default async function Projekt () {
                 tekst={item.korttekst}
             />
             ))
-            }
+        }
+        </div>
         </section>
         )
 }

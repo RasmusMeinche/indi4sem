@@ -11,9 +11,9 @@ export default async function Home() {
   <>
   <Navbar />
   <Branchecard />
+  < Cementsektion />
   <Katalog />
   <ProjektCard />
-  < Cementsektion />
 {/*     <LearningThree /> */}
     <div>
       <h1></h1>

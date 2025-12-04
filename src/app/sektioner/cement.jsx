@@ -1,5 +1,6 @@
 import Cementliste from '../components/cementliste'
 import Button from '../components/button'
+import Sektionsoverskrift from '../components/sektionsoverskrift'
 
 export default function Cementsektion () {
     return (
@@ -14,9 +15,7 @@ export default function Cementsektion () {
             py-(--content-padding)
             ">
             <div className="relative z-2">
-                <div className='w-full flex '>
-                    <h1 className='m-auto text-4xl font-(--font-weight)'>Hvad kan vi tilbyde</h1>
-                </div>
+                < Sektionsoverskrift titel="Hvad kan vi tilbyde"/>
                 <Cementliste />
                 <div className='mt-12'>
                     < Button knapTekst="Læs Mere"/>

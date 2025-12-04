@@ -6,7 +6,7 @@ export default async function Branchecard () {
     <>
     <div className="w-(--content-size) py-(--content-padding) m-auto">
         < Sektionsoverskrift titel="Udfordringer i byggebranchen"/>
-        <div className="grid grid-cols-3 justify-between gap-4">
+        <div className="grid grid-cols-3 justify-between gap-6">
         <Glasscard
         width="full"
         tekst="Byggeriet står for 35 procent af al affald, og sammen med produktionen af  byggematerialer udgør det 10-15 procent af Danmarks CO2-udledning.
