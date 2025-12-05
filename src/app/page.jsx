@@ -1,5 +1,5 @@
 import LearningThree from './threejs/LearningThree'
-import Katalog from './sektioner/katalog'
+import Katalog from './katalog/page'
 import Branchecard from './components/byggebranchecard'
 import ProjektCard from './projekter/page'
 import Cementsektion from './sektioner/cementliste'

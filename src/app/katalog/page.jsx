@@ -10,15 +10,17 @@ export default async function Katalog() {
     <>
     <section className="bg-[url(/jordfarvet-bg.png)] bg-cover bg-center w-full h-fit items-center py-(--content-padding)">
     < Sektionsoverskrift titel="Katalog"/>
-      {produktData.map((item) => (
+      <Link key={p.id} href={`/projekter/${p.id}`}>
+      {produktData.map((p) => (
         <Glasscard
-          key={item.id}
-          overskrift={item.overskrift}
-          img={item.img}
-          tekst={item.korttekst}
+          key={p.id}
+          overskrift={p.overskrift}
+          img={p.img}
+          tekst={p.korttekst}
         />
       ))
       }
+      </Link>
       </section>
     </>
     
