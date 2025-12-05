@@ -1,7 +1,8 @@
 import { getDataArtikel } from "@/src/lib/fetching";
 
 
-export default async function SingleProjekt ( {params} ) {
+export default async function SingleProjekt(props) {
+    const params = await props.params;
 
     const { id } = await params;
     const projektData = await getDataArtikel(params.id);
