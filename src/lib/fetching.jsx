@@ -16,7 +16,7 @@ export async function getDataAlleProdukter() {
   return res;
 }
 
-export async function getDataProdukt( {id} ) {
+export async function getDataProdukt(id) {
 
     const data = await fetch(
     `https://nwldyulnmyqrldjvcumo.supabase.co/rest/v1/produkter?id=eq.${id}`,
