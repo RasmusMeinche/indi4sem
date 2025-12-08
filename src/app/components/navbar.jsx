@@ -25,13 +25,16 @@ export default function Navbar() {
                         height={45}
                     />
                 </Link>
-
-                <a href="">Ansvar</a>
-                <a href="">Projekter</a>
-                <a href="">Katalog</a>
-                <a href="">Partner</a>
-                <a href="">Om os</a>
-                <a href="">Kontakt</a>
+                <Link href="/projekter">Projekter
+                </Link>
+                <Link href="/katalog">Katalog
+                </Link>
+                <Link href="/partner">Partner
+                </Link>
+                <Link href="/omos">Om os
+                </Link>
+                <Link href="/kontakt">Kontakt
+                </Link>
             </div>
         </section>
     )
