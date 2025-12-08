@@ -18,7 +18,7 @@ export default function Cementsektion () {
                 < Sektionsoverskrift titel="Hvad kan vi tilbyde"/>
                 <Cementliste />
                 <div className='mt-12'>
-                    < Button knapTekst="Læs Mere"/>
+                    < Button knapTekst="Læs Mere" href='/partner'/>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Sektionsoverskrift from "./sektionsoverskrift";
 
 const defaultLogos = [
   { src: "/recycon_logo.png", alt: "Recycon Logo" },
@@ -18,9 +19,7 @@ export default function Karrusel({
   return (
     <section className="w-full">
       {/* Overskrift */}
-      <h2 className="text-center text-lg md:text-3xl font-semibold mb-10">
-        {title}
-      </h2>
+      <Sektionsoverskrift titel="Nuværende partnere"/>
 
       {/* Stribe med logoer */}
       <div className="border-y border-gray-300 py-6">
@@ -50,7 +49,7 @@ export default function Karrusel({
           <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-linear-to-l from-white to-transparent" />
         </div>
       </div>
-      <div className="border-y border-gray-300 py-6" />
+      <div/>
 
       {/* Animationen til det uendelige loop */}
       <style jsx>{`
