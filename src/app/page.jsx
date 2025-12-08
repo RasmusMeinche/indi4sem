@@ -1,15 +1,13 @@
 import LearningThree from "./threejs/LearningThree";
-import Navbar from "./components/navbar";
-import Katalog from "./sektioner/katalog";
+import Katalog from "./katalog/page";
 import Branchecard from "./components/byggebranchecard";
-import ProjektCard from "./components/projektcards";
+import ProjektCard from "./projekter/page";
 import Cementsektion from "./sektioner/cementliste";
 import Cementtal from "./sektioner/cementtal";
 
 export default async function Home() {
   return (
     <>
-      <Navbar />
       <Branchecard />
       <Cementsektion />
       <Katalog />

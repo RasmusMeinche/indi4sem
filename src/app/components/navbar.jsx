@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <section className="w-full h-fit">
+        <section className="w-full h-fit border-gray-200 border-b">
             <div className="
                 flex items-center px-8 py-4 justify-between max-w-[1200px]
 

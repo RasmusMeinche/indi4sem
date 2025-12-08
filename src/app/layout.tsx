@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Darker_Grotesque } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 const darkergrotesque = Darker_Grotesque({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
       className={darkergrotesque.className}
     >
       <body>
+        < Navbar />
         {children}
         <Footer />
       </body>
