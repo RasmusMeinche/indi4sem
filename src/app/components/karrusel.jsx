@@ -10,20 +10,22 @@ const defaultLogos = [
 export default function Karrusel({
   title = "Nuværende partnere",
   logos = defaultLogos,
-  speed = 20, // sekunder for ét fuldt loop
+  speed = 20,
 }) {
-  // dupliker logos, så vi kan lave et uendeligt loop
   const items = [...logos, ...logos, ...logos];
 
   return (
     <section className="w-full">
       {/* Overskrift */}
-      <h2 className="text-center text-lg md:text-3xl font-semibold mb-10">
+      <h2 className="text-center text-lg md:text-3xl font-semibold mb-6">
         {title}
       </h2>
 
-      {/* Stribe med logoer */}
-      <div className="border-y border-gray-300 py-6">
+      {/* Lys grå linje over */}
+      <div className="w-full h-0.5 bg-gray-300 mb-16 mt-12" />
+
+      {/* Slider wrapper */}
+      <div className="py-6">
         <div className="relative overflow-hidden group">
           <div
             className="flex items-center slider-track group-hover:[animation-play-state:paused]"
@@ -39,7 +41,7 @@ export default function Karrusel({
                   alt={logo.alt}
                   width={260}
                   height={80}
-                  className="h-10 md:h-12 w-auto object-contain"
+                  className="h-10 md:h-16 w-auto object-contain"
                 />
               </div>
             ))}
@@ -50,9 +52,11 @@ export default function Karrusel({
           <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-linear-to-l from-white to-transparent" />
         </div>
       </div>
-      <div className="border-y border-gray-300 py-6" />
 
-      {/* Animationen til det uendelige loop */}
+      {/* Lys grå linje under */}
+      <div className="w-full h-0.5 bg-gray-300 mb-12 mt-16" />
+
+      {/* Animation */}
       <style jsx>{`
         .slider-track {
           width: max-content;
@@ -64,7 +68,6 @@ export default function Karrusel({
             transform: translateX(0);
           }
           100% {
-            /* fordi vi har dubleret arrayet, er -50% præcis næste “runde” */
             transform: translateX(-50%);
           }
         }
