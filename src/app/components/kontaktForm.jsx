@@ -23,7 +23,7 @@ export default function KontaktForm() {
       className="max-w-md w-full space-y-4"
     >
       <div className="flex flex-col gap-1">
-        <label className="text-lg font-medium">Navn</label>
+        <label className="text-xl font-medium">Navn</label>
         <input
           type="text"
           {...register("name", { required: "Navn er påkrævet" })}
@@ -35,7 +35,7 @@ export default function KontaktForm() {
       </div>
 
       <div className="flex flex-col gap-1">
-        <label className="text-lg font-medium">Virksomhed</label>
+        <label className="text-xl font-medium">Virksomhed</label>
         <input
           type="text"
           {...register("company")}
@@ -44,7 +44,7 @@ export default function KontaktForm() {
       </div>
 
       <div className="flex flex-col gap-1">
-        <label className="text-lg font-medium">Email</label>
+        <label className="text-xl font-medium">Email</label>
         <input
           type="email"
           {...register("email", {
@@ -57,12 +57,12 @@ export default function KontaktForm() {
           className="w-full rounded-md border border-black/20 bg-white px-3 py-2 text-sm outline-none focus:border-black"
         />
         {errors.email && (
-          <p className="text-lg text-red-600">{errors.email.message}</p>
+          <p className="text-xl text-red-600">{errors.email.message}</p>
         )}
       </div>
 
       <div className="flex flex-col gap-1">
-        <label className="text-lg font-medium">Projektbeskrivelse/Besked</label>
+        <label className="text-xl font-medium">Projektbeskrivelse/Besked</label>
         <textarea
           rows={5}
           {...register("message", { required: "Skriv gerne en kort besked" })}
@@ -76,7 +76,7 @@ export default function KontaktForm() {
       <div className="flex flex-col gap-1">
         <Button knapTekst={isSubmitting ? "Sender..." : "Send Besked"} />
         {isSubmitSuccessful && (
-          <p className="text-lg text-green-600 mt-2">
+          <p className="text-xl text-green-600 mt-2">
             Tak for din besked! Vi vender tilbage hurtigst muligt.
           </p>
         )}
