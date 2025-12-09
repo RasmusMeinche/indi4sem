@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <section className="w-full h-fit grid grid-cols-[0.6fr_2fr_0.6fr] border-gray-200 border-b">
+        <section className="grid grid-cols-[0.6fr_2fr_0.6fr] border-gray-200 border-b">
             <div className="px-8 py-4">
                 <Link href="/">
                     <Image
