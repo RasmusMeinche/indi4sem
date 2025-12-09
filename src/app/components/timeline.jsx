@@ -89,7 +89,7 @@ const CircularTimeline = () => {
 
   return (
     <section className="w-full max-w-6xl mx-auto px-4 py-16">
-      <h2 className="text-center text-2xl md:text-3xl font-semibold mb-12">
+      <h2 className="text-center text-2xl md:text-5xl font-semibold mb-12">
         Materiale-cyklus
       </h2>
 
@@ -127,8 +127,8 @@ const CircularTimeline = () => {
                     <span
                       className={`absolute tracking-wide ${
                         isActive
-                          ? "text-black font-semibold text-lg md:text-xl"
-                          : "text-gray-300 text-base md:text-lg"
+                          ? "text-black font-semibold text-lg md:text-3xl"
+                          : "text-gray-300 text-base md:text-2xl"
                       }`}
                       style={{
                         ...labelBase,
@@ -153,12 +153,12 @@ const CircularTimeline = () => {
               <span className="text-4xl md:text-5xl font-semibold">
                 {activeStep.id}
               </span>
-              <h3 className="font-semibold text-base md:text-lg">
+              <h3 className="font-semibold text-base md:text-3xl">
                 {activeStep.title}
               </h3>
             </div>
 
-            <p className="text-sm md:text-base leading-relaxed text-gray-700">
+            <p className="text-sm md:text-xl leading-relaxed text-gray-700">
               {activeStep.body}
             </p>
           </div>
