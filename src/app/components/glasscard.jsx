@@ -33,7 +33,7 @@ export default function Glass({
           <p className={`m-auto font-medium ${cardTekstSize} ${textWidth} ${textSize}`}>{tekst}</p>
         )}
 
-        {overskrift && <Button knapTekst="Læs mere" />}
+        {overskrift && <Button knapTekst="Læs mere"/>}
         {pris && <p>{pris}</p>}
       </div>
     </div>

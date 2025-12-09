@@ -25,6 +25,8 @@ export default function Navbar() {
                         height={45}
                     />
                 </Link>
+                <Link href="/ansvar">Ansvar
+                </Link>
                 <Link href="/projekter">Projekter
                 </Link>
                 <Link href="/katalog">Katalog

@@ -1,6 +1,7 @@
 import Cementliste from '../components/cementliste'
 import Button from '../components/button'
 import Sektionsoverskrift from '../components/sektionsoverskrift'
+import Link from 'next/link'
 
 export default function Cementsektion () {
     return (
@@ -18,7 +19,9 @@ export default function Cementsektion () {
                 < Sektionsoverskrift titel="Hvad kan vi tilbyde"/>
                 <Cementliste />
                 <div className='mt-12'>
-                    < Button knapTekst="Læs Mere" href='/partner'/>
+                    < Link href="/partner">
+                        < Button knapTekst="Læs Mere"/>
+                    </Link>
                 </div>
             </div>
         </div>
