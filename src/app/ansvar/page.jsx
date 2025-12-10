@@ -30,12 +30,18 @@ export default function Ansvar() {
     <>
       <section className="py-(--content-padding) w-(--content-size) m-auto">
         <Sektionsoverskrift titel="Dokumentation af vores ansvarlighed" />
-        <div className="flex gap-8">
-          <Glasscard 
-          textOnButton="Download PDF"
-          tekst="Som en del af vores arbejdsproces dokumenterer vi materialernes rejse og samarbejder med partnere, der deler vores fokus på bæredygtighed. Recycon står for produktionen af de genanvendte materialer og for selve støbeprocessen af Arc Racken. Her kan du åbne Recycons ESG-rapport, som beskriver deres arbejde med cirkularitet og ansvarlig materialehåndtering." />
-          <Glasscard 
-          textOnButton="Download PDF"
+        <div className="grid grid-cols-2 gap-8">
+          <Glasscard
+            width="w-full"
+            pdfUrl="https://nwldyulnmyqrldjvcumo.supabase.co/storage/v1/object/public/PDF%20-%20Regnskab/Recycon-ESG-rapport-2024.pdf"
+            textOnButton="Recycon ESG Rapport - 2024"
+            tekst="Som en del af vores arbejdsproces dokumenterer vi materialernes rejse og samarbejder med partnere, der deler vores fokus på bæredygtighed. Recycon står for produktionen af de genanvendte materialer og for selve støbeprocessen af Arc Racken. Her kan du åbne Recycons ESG-rapport, som beskriver deres arbejde med cirkularitet og ansvarlig materialehåndtering."
+          />
+          <Glasscard
+            width="w-full"
+            pdfUrl="https://nwldyulnmyqrldjvcumo.supabase.co/storage/v1/object/public/PDF%20-%20Regnskab/EPD%20document%20EPD-IES-0000308_003%20(S-P-00308)%20en.pdf"
+            textOnButton="7 Steel EPD Rapport"
+            tekst="For at sikre gennemsigtighed i vores materialevalg samarbejder vi med 7 Steel, der leverer armeringsstål med dokumenteret cirkulær og ansvarlig produktion. Deres tredjepartsverificerede EPD beskriver klimaaftryk, ressourceforbrug og genanvendelsespotentiale. Her kan du åbne 7 Steels EPD-rapport, som indgår i vores bæredygtighedsdokumentation."
           />
         </div>
       </section>
