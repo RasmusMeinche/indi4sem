@@ -1,5 +1,5 @@
 import LearningThree from "./threejs/LearningThree";
-import Katalog from "./katalog/page";
+import Katalogsektion from "./sektioner/katalogsektion";
 import Branchecard from "./components/byggebranchecard";
 import Cementsektion from "./sektioner/cementliste";
 import Cementtal from "./sektioner/cementtal";
@@ -15,7 +15,7 @@ export default async function Home() {
       />
       <Branchecard />
       <Cementsektion />
-      <Katalog />
+      <Katalogsektion />
       <Projektsektion />
       <Cementtal />
       {/*     <LearningThree /> */}
