@@ -7,8 +7,6 @@ export default async function Projektsektion() {
   const projekterData = await getDataAlleArtikler();
 
   return (
-    <section className="w-(--content-size) py-(--content-padding) m-auto">
-      <Sektionsoverskrift titel="Projekter" />
       <div className="grid grid-cols-3 justify-between gap-8">
         {projekterData.map((item) => (
           <Link
@@ -30,6 +28,5 @@ export default async function Projektsektion() {
           </Link>
         ))}
       </div>
-    </section>
   );
 }

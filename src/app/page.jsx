@@ -5,6 +5,7 @@ import Cementsektion from "./sektioner/cementliste";
 import Cementtal from "./sektioner/cementtal";
 import Herosection from "./sektioner/herosection";
 import Projektsektion from "./sektioner/projektsektion";
+import Sektionsoverskrift from "./components/sektionsoverskrift";
 
 export default async function Home() {
   return (
@@ -16,7 +17,10 @@ export default async function Home() {
       <Branchecard />
       <Cementsektion />
       <Katalogsektion />
-      <Projektsektion />
+      <div className="w-(--content-size) py-(--content-padding) m-auto">
+        <Sektionsoverskrift titel="Projekter" />
+        <Projektsektion />
+      </div>
       <Cementtal />
       {/*     <LearningThree /> */}
       <div>
