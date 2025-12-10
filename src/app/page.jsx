@@ -12,7 +12,7 @@ export default async function Home() {
     <>
       <Herosection
         bgUrl="/stor_logo_hero.png"
-        height="h-[70vh]"
+        height="h-[90vh]"
       />
       <Branchecard />
       <Cementsektion />
