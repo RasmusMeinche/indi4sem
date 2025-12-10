@@ -6,7 +6,7 @@ export default function Omos() {
   return (
     <>
       <Herosection
-        bgUrl="/omos_hero.png"
+        bgUrl="/omos_hero.webp"
         height="h-[60vh]"
       />
       <Maalsaetning />

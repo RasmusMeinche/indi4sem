@@ -30,7 +30,7 @@ export default function Ansvar() {
   return (
     <>
       <Herosection
-        bgUrl="/ansvar_hero.png"
+        bgUrl="/ansvar_hero.webp"
         height="h-[60vh]"
       />
       <section className="py-(--content-padding) w-(--content-size) m-auto">

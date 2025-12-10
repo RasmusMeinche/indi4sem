@@ -5,7 +5,7 @@ export default function Kontakt() {
   return (
     <>
       <HeroSection
-        bgUrl="/kontakt_herp.png"
+        bgUrl="/kontakt_herp.webp"
         height="h-[60vh]"
       />
       <KontaktSektion />

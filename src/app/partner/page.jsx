@@ -26,7 +26,7 @@ export default function Partner() {
   return (
     <>
       <HeroSection
-        bgUrl="/partner_hero.png"
+        bgUrl="/partner_hero.webp"
         height="h-[60vh]"
       />
       <div
