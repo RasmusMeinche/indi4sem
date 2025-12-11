@@ -8,7 +8,7 @@ export default function Projekt() {
         bgUrl="/projekter_hero.png"
         height="h-[60vh]"
       />
-      <div className="md:w-(--content-size) md:py-(--content-padding) m-auto">
+      <div className="w-(--content-size) py-(--content-padding) m-auto">
         <Projektsektion />
       </div>
     </>

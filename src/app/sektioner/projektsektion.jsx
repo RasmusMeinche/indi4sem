@@ -16,7 +16,7 @@ export default async function Projektsektion() {
             <Glasscard
               width="full"
               object="object-cover"
-              titleSize="text-xl"
+              titleSize="text-lg sm:text-xl"
               imgWidth="w-full"
               imgHeight="h-[180px]"
               margin="my-4"
