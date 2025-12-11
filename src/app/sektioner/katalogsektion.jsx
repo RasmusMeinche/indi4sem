@@ -20,6 +20,7 @@ export default async function Katalogsektion() {
             overskrift={p.overskrift}
             img={p.hovedimg}
             tekst={p.korttekst}
+            width="lg:w-2/3"
           />
         </Link>
       ))}

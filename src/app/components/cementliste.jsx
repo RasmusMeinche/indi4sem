@@ -5,7 +5,7 @@ export default function Cementliste ({
     tekst2 = "Integrationen af bænke og cykelstativer i ét multifunktionelt møbel skaber et æstetisk og praktisk byrumselement.",
     tal3 = "3",
     tekst3 = "Ved at bruge upcyclet beton hjælper vi virksomheder med at styrke deres grønne profil og den cirkulære økonomi.",
-    gridCols = "grid-cols-[1fr_5fr]"
+    gridCols = "sm:grid-cols-[1fr_5fr]"
 }) {
 
   return (
