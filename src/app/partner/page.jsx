@@ -43,7 +43,7 @@ export default function Partner() {
         <div className="z-1 relative">
           <Sektionsoverskrift titel="Fordele partnerskab" />
           <Cementliste
-            gridCols="grid-cols-[0.3fr_2fr_0.3fr]"
+            gridCols="md:grid-cols-[0.3fr_2fr_0.3fr]"
             tal1=""
             tal2=""
             tal3=""

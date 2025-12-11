@@ -66,7 +66,7 @@ export default function Ansvar() {
         <div className="z-1 relative">
           <Sektionsoverskrift titel="Vores værdier" />
           <Cementliste
-            gridCols="grid-cols-[0.3fr_2fr_0.3fr]"
+            gridCols="grid-cols-1 md:grid-cols-[0.3fr_2fr_0.3fr]"
             tal1=""
             tal2=""
             tal3=""

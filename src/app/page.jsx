@@ -23,9 +23,6 @@ export default async function Home() {
       </div>
       <Cementtal />
       {/*     <LearningThree /> */}
-      <div>
-        <h1></h1>
-      </div>
     </>
   );
 }
