@@ -10,9 +10,9 @@ export default function Cementliste ({
 
   return (
     <div className='grid lg:grid-cols-[1fr_2fr] w-(--content-size) m-auto items-center'>
-      <img className="lg:p-8 w-[100px] sm:w-[200px] md:w-[300px] m-auto" src="./sektionslogo.png" alt="logo"/>
+      <img className="lg:p-8 w-[100px] sm:w-[150px] md:w-[200px] lg:w-[300px] m-auto" src="./sektionslogo.png" alt="logo"/>
 
-      <article className="grid grid-rows-3 h-full divide-y border-black sm:border-l [&>div]:gap-4 sm:[&>div]:gap-4 [&_div]:py-4 [&_div]:px-4 sm:[&_p]:text-xl [&_p]:font-medium [&_h1]:text-4xl md:[&_h1]:text-8xl [&_h1]:text-center [&_h1]:font-(--font-weight)">
+      <article className="grid grid-rows-3 h-full divide-y border-black sm:border-l [&>div]:gap-4 sm:[&>div]:gap-4 [&_div]:py-4 [&_div]:px-4 sm:[&_p]:text-xl [&_p]:font-medium [&_h1]:text-4xl sm:[&_h1]:text-6xl md:[&_h1]:text-8xl [&_h1]:text-center [&_h1]:font-(--font-weight)">
 
         <div className={`grid ${gridCols} items-center justify-center`}>
           {tal1 && <h1>{tal1}</h1>}
