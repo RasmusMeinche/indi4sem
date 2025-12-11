@@ -13,10 +13,10 @@ export default async function SingleProjekt(props) {
                 src={data.img}
                 alt="Sektions billede"
             />
-            <h1 className="text-xl md:text-3xl lg:text-5xl text-center font-(--font-weight) mt-4 md:mt-12">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl text-center font-(--font-weight) mt-4 md:mt-12">
                 {data.overskrift}
             </h1>
-            <div className="my-8 lg:my-12">
+            <div className="my-2 lg:my-12 [&>p:not(:last-child)]:mt-4">
             {data.broedtekst.map((afsnit, index) => (
                 <p key={index} className="text-sm sm:text-lg font-medium">
                     {afsnit}
