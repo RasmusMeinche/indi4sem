@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Sektionsoverskrift from "./sektionsoverskrift";
 
 const steps = [
   {
@@ -89,9 +90,7 @@ const CircularTimeline = () => {
 
   return (
     <section className="w-full max-w-6xl mx-auto px-4 py-16">
-      <h2 className="text-center text-2xl md:text-5xl font-semibold mb-12">
-        Materiale-cyklus
-      </h2>
+      < Sektionsoverskrift titel="Materiale cyklus"/>
 
       <div className="flex flex-col md:flex-row items-center md:items-center gap-12 md:gap-20">
         {/* CIRKEL */}
