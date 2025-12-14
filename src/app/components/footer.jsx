@@ -27,13 +27,15 @@ export default function footer() {
             </div>
             <div className="flex gap-6 items-start">
               <a
-                href="#"
+                href="https://www.instagram.com/konkretgc/"
+                target="blank"
                 aria-label="Instagram"
               >
                 <CiInstagram size={50} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/konkretgc/"
+                target="blank"
                 aria-label="LinkedIn"
               >
                 <CiLinkedin size={50} />
