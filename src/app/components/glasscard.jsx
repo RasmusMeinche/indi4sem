@@ -7,20 +7,20 @@ export default function Glass({
   imgWidth = "full",
   imgHeight = "full",
   width = "w-full",
-  height = "h-fit",
+  height = "h-full",
   object = "object-cover",
   textSize = "text-xl",
   titleSize = "sm:text-4xl",
   textWidth = "w-4/5",
   cardTekstSize = "sm:text-lg",
   textOnButton = "Læs Mere",
-  gridRow = "lg:grid-rows-subgrid",
+  gridRow = "grid-rows-[minmax(5.5rem,auto)_auto_minmax(10.8rem,auto)_auto]",
   pdfUrl,
 }) {
   return (
-    <div className={`${width} glass-card grid ${gridRow} row-span-4 ${height} m-auto`}>
+    <div className={`${width} glass-card ${height} m-auto`}>
       <div
-        className={`text-center *:my-1 md:*:my-4 [&_*:last-child]:mt-4`}
+        className={`text-center *:my-1 grid md:*:my-4 ${gridRow} [&_*:last-child]:mt-0`}
       >
         {overskrift && (
           <h1 className={`${titleSize} font-(--font-weight) `}>{overskrift}</h1>
