@@ -31,7 +31,7 @@ export default function Glass({
           <img
             className={`m-auto rounded-md ${imgWidth} ${imgHeight} ${object}`}
             src={img}
-            alt="img" 
+            alt="img"
           />
         )}
 
