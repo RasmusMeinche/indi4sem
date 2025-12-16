@@ -13,7 +13,10 @@ export default function KontaktForm() {
 
   const onSubmit = async (data) => {
     console.log(data);
-    reset(); // tømmer formularen efter indsendelse
+    reset(
+      { name: "", company: "", email: "", message: "" },
+      { keepIsSubmitSuccessful: true }
+    ); // tømmer formularen efter indsendelse
   };
 
   return (
