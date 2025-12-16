@@ -12,7 +12,7 @@ export default function Glass({
   textSize = "text-xl",
   titleSize = "sm:text-4xl",
   textWidth = "w-4/5",
-  cardTekstSize = "sm:text-lg",
+  cardTekstSize = "sm:text-[1rem] md:text-lg",
   textOnButton = "Læs Mere",
   gridRow = "lg:grid-rows-[minmax(5.5rem,auto)_auto_minmax(10.8rem,auto)_auto] xl:lg:grid-rows-[minmax(5.5rem,auto)_auto_minmax(8.8rem,auto)_auto]",
   lastChild = "[&_*:last-child]:mt-4 lg:[&_*:last-child]:mt-0",

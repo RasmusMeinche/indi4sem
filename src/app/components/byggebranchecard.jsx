@@ -7,7 +7,7 @@ export default async function Branchecard () {
 
     <div className="w-(--content-size) py-(--content-padding) m-auto">
         < Sektionsoverskrift titel="Udfordringer i byggebranchen"/>
-        <div className="grid xl:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
         <Glasscard
         width="w-full"
         lastChild="[&_*:last-child]:mt-0 lg:[&_*:last-child]:mt-4"
