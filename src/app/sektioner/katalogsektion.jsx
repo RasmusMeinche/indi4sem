@@ -21,6 +21,8 @@ export default async function Katalogsektion() {
             img={p.hovedimg}
             tekst={p.korttekst}
             width="lg:w-2/3"
+            lastChild="[&_*:last-child]:mt-2 sm:[&_*:last-child]:mt-4 lg:[&_*:last-child]:mt-2"
+            imgWidth = "w-[150px] sm:w-[200px] md:w-[300px]"
           />
         </Link>
       ))}
