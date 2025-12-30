@@ -10,7 +10,6 @@ export default async function Home() {
   return (
     <>
       <Herosection
-      vh="sm:h-[80vh]"
       />
       <Branchecard />
       <Cementsektion />

@@ -15,15 +15,15 @@ export default function KontaktForm() {
   const onSubmit = async (data) => {
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_wj6fh2o",
+        "template_khdk9ih",
         {
           name: data.name,
           company: data.company,
           email: data.email,
           message: data.message,
         },
-        "YOUR_PUBLIC_KEY"
+        "B03wYMdLnGyLaM57B"
       );
 
       reset(
