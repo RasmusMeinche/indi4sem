@@ -10,8 +10,7 @@ export default async function Home() {
   return (
     <>
       <Herosection
-        bgUrl="/stor_logo_hero.webp"
-        height="h-[90vh]"
+      vh="sm:h-[80vh]"
       />
       <Branchecard />
       <Cementsektion />

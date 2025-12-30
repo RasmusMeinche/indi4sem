@@ -1,6 +1,7 @@
 "use client";
 
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 import Button from "./button";
 
 export default function KontaktForm() {
@@ -12,11 +13,26 @@ export default function KontaktForm() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log(data);
-    reset(
-      { name: "", company: "", email: "", message: "" },
-      { keepIsSubmitSuccessful: true }
-    ); // tømmer formularen efter indsendelse
+    try {
+      await emailjs.send(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        {
+          name: data.name,
+          company: data.company,
+          email: data.email,
+          message: data.message,
+        },
+        "YOUR_PUBLIC_KEY"
+      );
+
+      reset(
+        { name: "", company: "", email: "", message: "" },
+        { keepIsSubmitSuccessful: true }
+      );
+    } catch (error) {
+      console.error("EmailJS error:", error);
+    }
   };
 
   return (
@@ -59,12 +75,14 @@ export default function KontaktForm() {
           className="w-full rounded-md border border-black/20 bg-white px-3 py-2 text-sm outline-none focus:border-black"
         />
         {errors.email && (
-          <p className="text-xl text-red-600">{errors.email.message}</p>
+          <p className="text-xs text-red-600">{errors.email.message}</p>
         )}
       </div>
 
       <div className="flex flex-col gap-1">
-        <label className="text-xl font-medium">Projektbeskrivelse/Besked</label>
+        <label className="text-xl font-medium">
+          Projektbeskrivelse / Besked
+        </label>
         <textarea
           rows={5}
           {...register("message", { required: "Skriv gerne en kort besked" })}
@@ -80,6 +98,7 @@ export default function KontaktForm() {
           type="submit"
           knapTekst={isSubmitting ? "Sender..." : "Send Besked"}
         />
+
         {isSubmitSuccessful && (
           <p className="text-xl text-green-600 mt-2">
             Tak for din besked! Vi vender tilbage hurtigst muligt.
