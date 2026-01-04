@@ -25,7 +25,6 @@ export default function Glass({
 
   const handleMouseMove = (e) => {
     const card = cardRef.current;
-    if (!card) return;
 
     const rect = card.getBoundingClientRect();
 
@@ -47,7 +46,6 @@ export default function Glass({
 
   const handleMouseLeave = () => {
     const card = cardRef.current;
-    if (!card) return;
 
     card.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
   };
