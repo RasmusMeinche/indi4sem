@@ -9,7 +9,6 @@ const defaultLogos = [
 ];
 
 export default function Karrusel({
-  title = "Nuværende partnere",
   logos = defaultLogos,
   speed = 20,
 }) {
