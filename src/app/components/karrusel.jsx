@@ -6,8 +6,8 @@ import Sektionsoverskrift from "./sektionsoverskrift";
 const defaultLogos = [
   { src: "/recycon_logo.png", alt: "Recycon Logo" },
   { src: "/7steel_logo.png", alt: "7steel Logo" },
-  { src: "/tekno-inst.png", alt: "Teknologisk Institut"},
-  { src: "/clean.png", alt: "Clean Logo"}
+  { src: "/tekno-inst1.png", alt: "Teknologisk Institut"},
+  { src: "/clean1.png", alt: "Clean Logo"}
 ];
 
 export default function Karrusel({
@@ -41,7 +41,7 @@ export default function Karrusel({
                   alt={logo.alt}
                   width={260}
                   height={80}
-                  className="h-full w-auto object-contain"
+                  className="h-full object-contain"
                 />
               </div>
             ))}
