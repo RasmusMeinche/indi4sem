@@ -30,17 +30,17 @@ export default function KontaktSektion() {
             <div className="space-y-4 text-lg">
               <div className="flex items-start gap-3 ">
                 <CiLocationOn size={24} />
-                <p>Lyongade 32, 3.th København S, 2300</p>
+                <p>Vesterbrogade 103 3, 1620 København V</p>
               </div>
 
               <div className="flex items-start gap-3">
                 <CiPhone size={24} />
-                <p>+45 41 10 02 76</p>
+                <p>+45 30 34 35 76</p>
               </div>
 
               <div className="flex items-start gap-3">
                 <CiMail size={24} />
-                <p>konkretgc@gmail.com</p>
+                <p>konkret.gc@gmail.com</p>
               </div>
             </div>
           </div>

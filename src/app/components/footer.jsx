@@ -16,8 +16,7 @@ export default function footer() {
               className="w-30 md:w-50 h-auto"
             />
             <p className="text-xl leading-relaxed">
-              KONKRET I/S | CVR: 45525260 <br /> Prinsesse Charlottes Gade 38,
-              2200 København N
+              KONKRET I/S | CVR: 45525260 <br /> Vesterbrogade 103 3, 1620 København V
             </p>
           </div>
           <div className="flex flex-col items-start gap-10">
