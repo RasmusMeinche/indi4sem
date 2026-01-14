@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const linkClasses =
-    "md:px-2 lg:px-4 py-1 text-2xl md:text-xl lg:text-2xl hover:text-white hover:bg-black hover:rounded-md";
+    "md:px-2 lg:px-4 py-1 text-2xl md:text-xl lg:text-2xl hover:text-white hover:bg-black hover:rounded-full";
 
   const links = [
     { href: "/ansvar", label: "Ansvar" },
